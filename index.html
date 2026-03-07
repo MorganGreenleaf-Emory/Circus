@@ -3,16 +3,194 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello, World!</title>
+  <title>Infectious Disease Circus</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main>
-    <h1>Hello, World!</h1>
-    <p>Welcome to my first webpage.</p>
-    <button id="greet-btn">Say Hello</button>
-    <p id="message"></p>
-  </main>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="container nav-inner">
+      <div class="site-brand">
+        <span class="site-name">Infectious Disease Circus</span>
+        <span class="site-tagline">Bridging Infectious Disease &amp; Substance Use Research</span>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav">
+        <a href="#events">Events</a>
+        <a href="#research">Research</a>
+        <a href="#members">Members</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <h1>Where Infectious Disease Meets Substance Use</h1>
+      <p>The Infectious Disease Circus is an interdisciplinary collaborative advancing research, clinical practice, and public health at the intersection of infectious diseases and substance use disorders. We bring together clinicians, researchers, and advocates to address one of the most pressing co-occurring epidemics of our time.</p>
+      <a href="#events" class="btn-primary">See Upcoming Events</a>
+    </div>
+  </section>
+
+  <!-- Events -->
+  <section class="section" id="events">
+    <div class="container">
+      <h2 class="section-title">Upcoming Events</h2>
+      <div class="card-grid">
+
+        <div class="card event-card">
+          <div class="date-badge">
+            <span class="date-month">APR</span>
+            <span class="date-day">14</span>
+            <span class="date-year">2026</span>
+          </div>
+          <div class="card-body">
+            <h3>Spring Symposium: Opioids &amp; HIV Co-Epidemic</h3>
+            <p>A half-day virtual symposium exploring the latest data on HIV transmission among people who use drugs, featuring panel discussions and case presentations.</p>
+            <p class="event-meta">Virtual &nbsp;·&nbsp; 9:00 AM – 1:00 PM EDT</p>
+          </div>
+        </div>
+
+        <div class="card event-card">
+          <div class="date-badge">
+            <span class="date-month">MAY</span>
+            <span class="date-day">6</span>
+            <span class="date-year">2026</span>
+          </div>
+          <div class="card-body">
+            <h3>Grand Rounds: Hepatitis C Treatment in Active Substance Use</h3>
+            <p>A clinical grand rounds presentation examining direct-acting antiviral therapy outcomes in patients with active substance use disorders and barriers to care.</p>
+            <p class="event-meta">University Medical Center, Room 204 &nbsp;·&nbsp; 12:00 PM – 1:00 PM</p>
+          </div>
+        </div>
+
+        <div class="card event-card">
+          <div class="date-badge">
+            <span class="date-month">JUN</span>
+            <span class="date-day">20</span>
+            <span class="date-year">2026</span>
+          </div>
+          <div class="card-body">
+            <h3>Annual Research Conference</h3>
+            <p>Our flagship annual gathering featuring keynote addresses, abstract presentations, and networking opportunities for researchers and clinicians across the field.</p>
+            <p class="event-meta">Downtown Convention Center &nbsp;·&nbsp; All Day</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Research -->
+  <section class="section section-alt" id="research">
+    <div class="container">
+      <h2 class="section-title">Recent Research</h2>
+      <div class="card-grid">
+
+        <div class="card research-card">
+          <div class="research-tag">HIV / Substance Use</div>
+          <h3>Integrated Care Models Reduce HIV Viral Load in PWUD</h3>
+          <p class="authors">J. Alvarez, S. Park, M. Okonkwo &nbsp;·&nbsp; 2025</p>
+          <p>A retrospective cohort study of 640 patients found that co-located addiction medicine and HIV care services were associated with a 34% increase in viral suppression rates compared to siloed care delivery.</p>
+          <a href="#" class="read-more">Read more &rarr;</a>
+        </div>
+
+        <div class="card research-card">
+          <div class="research-tag">Hepatitis C / MOUD</div>
+          <h3>Buprenorphine Co-Administration Does Not Impair HCV DAA Efficacy</h3>
+          <p class="authors">L. Chen, R. Vasquez, T. Nwosu &nbsp;·&nbsp; 2025</p>
+          <p>A prospective analysis of 210 patients on medications for opioid use disorder (MOUD) receiving direct-acting antiviral therapy demonstrates comparable sustained virologic response rates to the general population.</p>
+          <a href="#" class="read-more">Read more &rarr;</a>
+        </div>
+
+        <div class="card research-card">
+          <div class="research-tag">Endocarditis / IVDU</div>
+          <h3>Outpatient Parenteral Antibiotic Therapy Outcomes in IVDU-Associated Endocarditis</h3>
+          <p class="authors">A. Reyes, D. Kim, P. Osei &nbsp;·&nbsp; 2026</p>
+          <p>This multicenter observational study evaluates the safety and effectiveness of OPAT programs for infective endocarditis in people who inject drugs, identifying predictors of successful completion.</p>
+          <a href="#" class="read-more">Read more &rarr;</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Members -->
+  <section class="section" id="members">
+    <div class="container">
+      <h2 class="section-title">Our Members</h2>
+      <div class="member-grid">
+
+        <div class="member-card">
+          <div class="member-avatar">JA</div>
+          <div class="member-info">
+            <h3>Dr. Julia Alvarez</h3>
+            <p class="member-role">Principal Investigator</p>
+            <p class="member-institution">University School of Medicine</p>
+          </div>
+        </div>
+
+        <div class="member-card">
+          <div class="member-avatar">SP</div>
+          <div class="member-info">
+            <h3>Dr. Samuel Park</h3>
+            <p class="member-role">Infectious Disease Physician</p>
+            <p class="member-institution">City General Hospital</p>
+          </div>
+        </div>
+
+        <div class="member-card">
+          <div class="member-avatar">MO</div>
+          <div class="member-info">
+            <h3>Dr. Miriam Okonkwo</h3>
+            <p class="member-role">Addiction Medicine Specialist</p>
+            <p class="member-institution">Regional Medical Center</p>
+          </div>
+        </div>
+
+        <div class="member-card">
+          <div class="member-avatar">LC</div>
+          <div class="member-info">
+            <h3>Dr. Lin Chen</h3>
+            <p class="member-role">Hepatologist</p>
+            <p class="member-institution">University Hospital</p>
+          </div>
+        </div>
+
+        <div class="member-card">
+          <div class="member-avatar">RV</div>
+          <div class="member-info">
+            <h3>Dr. Rosa Vasquez</h3>
+            <p class="member-role">Epidemiologist</p>
+            <p class="member-institution">Public Health Institute</p>
+          </div>
+        </div>
+
+        <div class="member-card">
+          <div class="member-avatar">AR</div>
+          <div class="member-info">
+            <h3>Dr. Andre Reyes</h3>
+            <p class="member-role">Clinical Researcher</p>
+            <p class="member-institution">Community Health Network</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p class="footer-name">Infectious Disease Circus</p>
+      <p class="footer-sub">For inquiries, contact <a href="mailto:info@idcircus.org">info@idcircus.org</a></p>
+      <p class="footer-copy">&copy; 2026 Infectious Disease Circus. All rights reserved.</p>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
