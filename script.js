@@ -1,17 +1,27 @@
-const btn = document.getElementById('greet-btn');
-const message = document.getElementById('message');
+// Mobile nav toggle
+const navToggle = document.getElementById('nav-toggle');
+const siteNav = document.getElementById('site-nav');
 
-const greetings = [
-  'Hello there!',
-  'Hey, World!',
-  'Greetings, traveler!',
-  'Hi from JavaScript!',
-  'Howdy!',
-];
+navToggle.addEventListener('click', () => {
+  const isOpen = siteNav.classList.toggle('is-open');
+  navToggle.setAttribute('aria-expanded', isOpen);
+});
 
-let index = 0;
+// Close nav when a link is clicked (mobile)
+siteNav.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    siteNav.classList.remove('is-open');
+    navToggle.setAttribute('aria-expanded', false);
+  });
+});
 
-btn.addEventListener('click', () => {
-  message.textContent = greetings[index % greetings.length];
-  index++;
+// Smooth scroll for browsers that don't support CSS scroll-behavior
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', e => {
+    const target = document.querySelector(anchor.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
 });
