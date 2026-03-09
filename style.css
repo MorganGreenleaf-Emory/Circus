@@ -336,6 +336,14 @@ body {
   align-items: center;
   justify-content: center;
   letter-spacing: 0.02em;
+  overflow: hidden;
+}
+
+.member-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .member-info h3 {
